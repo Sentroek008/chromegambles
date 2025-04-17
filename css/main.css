@@ -1,0 +1,54 @@
+/* Gaya dasar dan header */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import 'base.css';
+@import 'header.css';
+@import 'sidebar.css';
+@import 'sponsors.css';
+@import 'content.css';
+@import 'stream.css';
+
+/* Support button styling */
+.support-button {
+    position: fixed;
+    bottom: 20px;
+    left: 250px;
+    padding: 10px 20px;
+    background-color: #39ff14;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 999;
+    font-size: 16px;
+}
+
+.support-button i {
+    font-size: 20px;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    min-height: calc(100vh - 60px);
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Chat popup positioning */
+.chat-popup-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    width: 300px;
+    height: 400px;
+    background: #1a1a1a;
+    display: none;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}

@@ -1,0 +1,82 @@
+/* Semua style untuk main content */
+.main-content {
+    position: fixed;
+    left: 260px;
+    top: 480px;
+    right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    z-index: 2;
+}
+
+.left-column, .right-column {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(57, 255, 20, 0.15),
+                0 0 25px rgba(57, 255, 20, 0.1),
+                0 0 15px rgba(57, 255, 20, 0.05);
+    height: auto;
+    min-height: 450px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.left-column {
+    background-image: url('../images/about-us-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.left-column::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 26, 26, 0.85);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.left-column > * {
+    position: relative;
+    z-index: 1;
+}
+
+.about-title, .live-stream-title {
+    color: #39ff14;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-content {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.about-content p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.stream-container {
+    margin-top: 20px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(57, 255, 20, 0.15),
+                0 0 20px rgba(57, 255, 20, 0.1),
+                inset 0 0 20px rgba(57, 255, 20, 0.05);
+}
